@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import FlightCard from '../components/FlightCard'
+import { BounceLoader, BarLoader } from 'react-spinners'
 
 export default function FlightOffers() {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -25,7 +26,7 @@ export default function FlightOffers() {
 
     return ( 
         <div>
-            {flights.map((flight) => <FlightCard key={flight.id} 
+            {flights.length != 0 ? flights.map((flight) => <FlightCard key={flight.id} 
                                                  id={flight.id} 
                                                  origin={originLocationCode} 
                                                  destination={destinationLocationCode} 
@@ -33,7 +34,7 @@ export default function FlightOffers() {
                                                  duration={flight.trips.duration} 
                                                  seats={flight.numberOfBookableSeats}
                                                  trips={flight.trips}
-                                                 />)}
+                                                 />) : <h1>Loading...</h1>}
         </div>
      );
 }

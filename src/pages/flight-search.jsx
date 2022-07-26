@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'
-import DestinationCard from '../components/DestinationCard';
+import axios from 'axios';
+import FlightSearchBar from '../components/FlightSearchBar';
 
 function FlightSearch() {
 
@@ -24,35 +24,10 @@ function FlightSearch() {
     }, [])
 
     return ( 
-        <div className="search-page">
-            <div className="flight-search">
-                <form action="flights/offers">
-                    <div>
-                        <input type="radio" value="oneWay" name="flight_type" /> One Way
-                        <input type="radio" value="roundTrip" name="flight_type" /> Roundtrip
-                    </div>
-                    <input type="text" name="originLocationCode" placeholder="Origin Location Code" required></input>
-                    <input type="text" name="destinationLocationCode" placeholder="Destination Location Code" required></input>
-                    <input type="date" name="departureDate" placeholder="Departure Date" required></input>
-                    <input type="date" name="returnDate" placeholder="Return Date" required></input>
-                    <input type="text" name="travelClass" placeholder="Travel Class"></input>
-                    <button>Search</button>
-                </form>
-            </div>
-            <div className="travel-recommendations">
-                <h3>Explore the World from {location.region_name}!</h3>
-                <h3 className="text-3xl font-bold underline">Most Booked Flights near you</h3>
-                <div>
-                    {/* {recommendations.map(destination => 
-                        <DestinationCard 
-                            key={destination.id}
-                            id={destination.id}
-                            destination={destination.destination}
-                            rating={destination.analytics.flights}
-                        />
-                    )} */}
-                </div>
-            </div>
+        <div class="bg-flight-header opacity-70 bg-cover h-screen font-body px-8 py-16">
+            <img class="object-fill" />
+            <h1 class="text-4xl mb-12 font-bold">Pick a place and let's fly.</h1>
+            <FlightSearchBar />
         </div>
      );
 }

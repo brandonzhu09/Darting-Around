@@ -10,9 +10,14 @@ module.exports = {
       },
       backgroundImage: {
         'hero-header': "url('./assets/mountain.png')",
+        'flight-header': "url('./assets/airplane-view-mountains.jpg')",
+        'hotel-header': "url('./assets/ski-resort.jpg')",
       },
       spacing: {
         '128': '32rem'
+      },
+      fontFamily: {
+        body: ['Monda'],
       }
     },
   },

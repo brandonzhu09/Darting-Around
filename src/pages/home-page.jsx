@@ -6,7 +6,7 @@ import cardImage from '../assets/card_image.png';
 
 function HomePage() {
     return ( 
-        <div>
+        <div class="font-body">
             <header class="bg-hero-header opacity-70 bg-cover h-128 relative">
                 <nav class="">
                         <ul class="flex text-gray-300 text-lg list-none justify-center">

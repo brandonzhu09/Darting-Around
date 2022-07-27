@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import RentalCard from '../components/RentalCard'
+import { BarLoader, BounceLoader, BeatLoader } from 'react-spinners';
+import { css } from '@emotion/react';
 
 export default function RentalOffers() {
     const [searchParams, setSearchParams] = useSearchParams()
     const [rentals, setRentals] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const location = searchParams.get("location") 
     const departureDate = searchParams.get("departureDate")
@@ -16,7 +19,8 @@ export default function RentalOffers() {
     useEffect(()=>{
         axios.get(`http://localhost:5000/rentals/${location}/${departureDate}/${departureTime}/${returnDate}/${returnTime}`).then(response => {
             console.log("SUCCESS", response)
-            setRentals(JSON.parse(JSON.stringify(response.vehicleRates)))
+            setRentals(JSON.parse(JSON.stringify(response.data.vehicleRates)))
+            setLoading(false)
         }).catch(error => {
             console.log(error)
         })
@@ -25,18 +29,22 @@ export default function RentalOffers() {
 
     return ( 
         <div>
-            {rentals.map((rental) => <RentalCard 
-                                        key={Rental.offers[0].id} 
-                                        id={hotel.hotel.hotelId} 
-                                        name={hotel.hotel.name}
-                                        price={hotel.offers[0].price.total} 
-                                        amenities={hotel.hotel.amenities}
-                                        location={{"address":hotel.hotel.address.lines, "latitude":hotel.hotel.latitude, "longitude":hotel.hotel.longitude}}
-                                        contact={hotel.hotel.contact}
-                                        rating={hotel.hotel.rating}
+            {loading === false ? (
+            rentals.map((rental) => <RentalCard 
+                                        key={rental.id} 
+                                        id={rental.id} 
+                                        name={rental.vehicleInfo.vehicleExample}
+                                        description={rental.vehicleInfo.description}
+                                        price={rental.rates.USD.basePrices.TOTAL} 
+                                        pickUpLocation={rental.pickUpLocation.address}
+                                        returnLocation={rental.returnLocation.address}
+                                        images={rental.vehicleInfo.images}
+                                        peopleCapacity={rental.vehicleInfo.peopleCapacity}
+                                        bagCapacity={rental.vehicleInfo.bagCapacity}
                                         departureDate={departureDate}
                                         returnDate={returnDate}
-                                                 />)}
+                                                 />)
+            ) : <BeatLoader/>}
         </div>
      );
 }

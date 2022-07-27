@@ -5,7 +5,7 @@ import FlightCard from '../components/FlightCard'
 import { BounceLoader, BarLoader } from 'react-spinners'
 
 export default function FlightOffers() {
-    const [searchParams, setSearchParams] = useSearchParams()
+    const searchParams = useSearchParams()
     const [flights, setFlights] = useState([])
 
     const originLocationCode = searchParams.get("originLocationCode") 

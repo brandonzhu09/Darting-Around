@@ -139,15 +139,15 @@ def rentals_offer_search(location, departureDate, departureTime, returnDate, ret
     url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/search'
     params = {
     'location_pickup': 'JFK',
-    'date_time_return': "{} {}".format(departureDate, departureTime),
-    'date_time_pickup': "{} {}".format(returnDate, returnTime),
+    'date_time_pickup': "{} {}".format(departureDate, departureTime),
+    'date_time_return': "{} {}".format(returnDate, returnTime),
     'location_return': '1365100023'
     }
     headers = {
     'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
     'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
     }
-    response = requests.get(url, params=params, headers=headers)
+    response = requests.get(url, params=params, headers=headers).json()
     vehicleRates = response["vehicleRates"]
     partnerLocations = response["partnerLocations"]
     result = {}
@@ -155,10 +155,10 @@ def rentals_offer_search(location, departureDate, departureTime, returnDate, ret
     for vehicle in vehicleRates:
         if len(vehicles) > max: # get a maximum result of vehicles
             break
-        pickupLocationId = vehicle["partnerInfo"]["pickupLocationId"]
-        returnLocationId = vehicle["partnerInfo"]["returnLocationId"]
-        vehicle["pickUpLocation"] = partnerLocations[pickupLocationId]
-        vehicle["returnLocation"] = partnerLocations[returnLocationId]
-        vehicles.append(vehicle)
+        pickupLocationId = vehicleRates[vehicle]["partnerInfo"]["pickupLocationId"]
+        returnLocationId = vehicleRates[vehicle]["partnerInfo"]["returnLocationId"]
+        vehicleRates[vehicle]["pickUpLocation"] = partnerLocations[pickupLocationId]
+        vehicleRates[vehicle]["returnLocation"] = partnerLocations[returnLocationId]
+        vehicles.append(vehicleRates[vehicle])
     result["vehicleRates"] = vehicles 
     return result

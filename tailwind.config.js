@@ -12,6 +12,7 @@ module.exports = {
         'hero-header': "url('./assets/mountain.png')",
         'flight-header': "url('./assets/airplane-view-mountains.jpg')",
         'hotel-header': "url('./assets/ski-resort.jpg')",
+        'rental-header': "url('./assets/rental-cars-background.jpg')",
       },
       spacing: {
         '128': '32rem'

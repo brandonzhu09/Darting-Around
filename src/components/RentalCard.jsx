@@ -1,16 +1,20 @@
 import React from 'react';
 
+/*
+props: key, id, name, description, price, pickUpLocation, returnLocation, 
+images, peopleCapacity, bagCapacity, departureDate, returnDate
+*/
 function RentalCard(props) {
     return ( 
         <div>
-            <h3>{props.name}</h3>
+            <h1 class="font-bold">{props.name}</h1>
+            <h3>{props.description}</h3>
+            <img src={props.images.SIZE134X72}/>
             <ul>
                 <li>Price: ${props.price}</li>
-                Amenities:<ul>
-                    {props.amenities !== undefined ? props.amenities.slice(0,5).map(perk => <li>{perk}</li>) : "None"}
-                </ul>
-                <li>Rating: {props.rating}/5</li>
+                <li>Pickup Location:{props.pickUpLocation.addressLine1} {props.pickUpLocation.cityName}</li>
             </ul>
+            <br></br>
         </div>
      );
 }

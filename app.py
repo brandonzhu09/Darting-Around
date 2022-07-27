@@ -4,7 +4,7 @@ from flask_cors import CORS #comment this on deployment
 import requests
 
 from amadeus import Client, ResponseError
-import json, pprint
+import json
 
 
 app = Flask(__name__, static_url_path='', static_folder='client/build')
@@ -45,6 +45,11 @@ def location():
 @app.route('/flights/travel_recommendations/<string:originCityCode>/<string:period>')
 def flight_recommendations(originCityCode, period):
     result = flights_most_booked(originCityCode, period)
+    return result
+
+@app.route('/rentals/<string:location>/<string:departureDate>/<string:departureTime>/<string:returnDate>/<string:returnTime>')
+def rentals(location, departureDate, departureTime, returnDate, returnTime):
+    result = rentals_offer_search(location, departureDate, departureTime, returnDate, returnTime)
     return result
 
 # SYD, BKK, 2022-11-01, 2022-11-18, ECONOMY
@@ -118,3 +123,42 @@ def flights_most_booked(originCityCode, period):
         destination["id"] = id
         id += 1
     return response
+
+def car_locations_search(location):
+    url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/locations',
+    params = {'name': 'Heathrow Airport'},
+    headers = {
+        'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
+        'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
+    }
+    response = requests.get(url, params=params, headers=headers)
+    return {'locationID': response[0][0]["cityID"], 'latitude': response[0][0]["lat"], 'longitude': response[0][0]["lon"]}
+
+def rentals_offer_search(location, departureDate, departureTime, returnDate, returnTime, max=20):
+    # locationID = car_locations_search(location)['locationID']
+    url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/search'
+    params = {
+    'location_pickup': 'JFK',
+    'date_time_return': "{} {}".format(departureDate, departureTime),
+    'date_time_pickup': "{} {}".format(returnDate, returnTime),
+    'location_return': '1365100023'
+    }
+    headers = {
+    'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
+    'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
+    }
+    response = requests.get(url, params=params, headers=headers)
+    vehicleRates = response["vehicleRates"]
+    partnerLocations = response["partnerLocations"]
+    result = {}
+    vehicles = []
+    for vehicle in vehicleRates:
+        if len(vehicles) > max: # get a maximum result of vehicles
+            break
+        pickupLocationId = vehicle["partnerInfo"]["pickupLocationId"]
+        returnLocationId = vehicle["partnerInfo"]["returnLocationId"]
+        vehicle["pickUpLocation"] = partnerLocations[pickupLocationId]
+        vehicle["returnLocation"] = partnerLocations[returnLocationId]
+        vehicles.append(vehicle)
+    result["vehicleRates"] = vehicles 
+    return result

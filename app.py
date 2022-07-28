@@ -93,6 +93,7 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
             trips = flight["trips"][-1]
             trips["duration"] = trip["duration"]
             trips["segments"] = []
+            airlines = []
 
             for segment in trip["segments"]:
                 trips["segments"].append({})
@@ -105,6 +106,14 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
                 segments["departureIataCode"] = segment["departure"]["iataCode"]
                 segments["duration"] = segment["duration"]
                 segments["id"] = segment["id"]
+                airlines.append(segments["carrierCode"])
+            
+            airlines = set(airlines)
+            if airlines == 1: # only 1 airline for trip
+                airline = airlines.pop()
+                trips["airline"] = response["dictionaries"]["carriers"][airline]
+            else:
+                trips["airline"] = "MULTIPLE AIRLINES"
 
     # GET REQUEST TO-FILE TEST (DELETE)
     # with open("travel_offers_post.txt", 'w') as f:

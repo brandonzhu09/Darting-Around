@@ -9,13 +9,13 @@ function HomePage() {
         <div class="font-body">
             <header class="bg-hero-header opacity-70 bg-cover h-128 relative">
                 <nav class="">
-                        <ul class="flex text-gray-300 text-lg list-none justify-center">
-                            <li class="ml-10"><a href="/flights"></a></li>
-                            <li class="ml-10"><a href="/hotels"></a></li>
-                            <li class="ml-10"><a href="/rentals"></a></li>
-                            <li class="ml-10"><a href="/profile"></a></li>
-                            <li class="ml-10"><a href="/"></a></li>
-                        </ul>
+                    <ul class="flex text-gray-300 text-lg list-none justify-center">
+                        <li class="ml-10"><a href="/flights"></a></li>
+                        <li class="ml-10"><a href="/hotels"></a></li>
+                        <li class="ml-10"><a href="/rentals"></a></li>
+                        <li class="ml-10"><a href="/profile"></a></li>
+                        <li class="ml-10"><a href="/"></a></li>
+                    </ul>
                 </nav>
                 <div class="mt-24 text-white pl-10 drop-shadow-md">
                     <h1 class="pt-10 text-6xl sm:text-5xl">Make your next move.</h1>

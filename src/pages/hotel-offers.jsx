@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import HotelCard from '../components/HotelCard'
+import LoadingScreen from '../components/LoadingScreen';
 
 export default function HotelOffers() {
     const [searchParams, setSearchParams] = useSearchParams()
     const [hotels, setHotels] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const cityCode = searchParams.get("cityCode") 
     const departureDate = searchParams.get("departureDate")
@@ -15,6 +17,7 @@ export default function HotelOffers() {
         axios.get(`http://localhost:5000/hotels/${cityCode}`).then(response => {
             console.log("SUCCESS", response)
             setHotels(JSON.parse(JSON.stringify(response.data.data)))
+            setLoading(false)
         }).catch(error => {
             console.log(error)
         })
@@ -23,7 +26,8 @@ export default function HotelOffers() {
 
     return ( 
         <div>
-            {hotels.map((hotel) => <HotelCard 
+            {loading === false ? (
+                hotels.map((hotel) => <HotelCard 
                                         key={hotel.offers[0].id} 
                                         id={hotel.hotel.hotelId} 
                                         name={hotel.hotel.name}
@@ -34,7 +38,8 @@ export default function HotelOffers() {
                                         rating={hotel.hotel.rating}
                                         departureDate={departureDate}
                                         returnDate={returnDate}
-                                                 />)}
+                                                 />)
+            ) : <LoadingScreen />}
         </div>
      );
 }

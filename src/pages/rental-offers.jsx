@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'
-import { useSearchParams } from 'react-router-dom'
-import RentalCard from '../components/RentalCard'
-import { BarLoader, BounceLoader, BeatLoader } from 'react-spinners';
-import { css } from '@emotion/react';
+import axios from 'axios';
+import { useSearchParams } from 'react-router-dom';
+import RentalCard from '../components/RentalCard';
+import LoadingScreen from '../components/LoadingScreen';
 
 export default function RentalOffers() {
     const [searchParams, setSearchParams] = useSearchParams()
@@ -44,7 +43,7 @@ export default function RentalOffers() {
                                         departureDate={departureDate}
                                         returnDate={returnDate}
                                                  />)
-            ) : <BeatLoader/>}
+            ) : <LoadingScreen />}
         </div>
      );
 }

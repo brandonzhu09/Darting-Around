@@ -8,15 +8,14 @@ function FlightSearchBar() {
         <div class="flight-search">
             <form action="flights/offers">
                 <div class="flex items-baseline my-2">
-                    <input class="mr-4" type="radio" value="oneWay" name="flight_type"></input>
+                    <input class="mr-4 peer" type="radio" value="oneWay" name="flightType"></input>
                     <label class="mr-2 text-lg">One Way</label>
-                    <input class="mr-4" type="radio" value="roundTrip" name="flight_type"></input>
-                    <label class="mr-4 text-lg">Roundtrip</label>
+                    <input class="mr-4" type="radio" value="roundTrip" name="flightType" defaultChecked></input>
+                    <label class="mr-4 roundTrip text-lg">Roundtrip</label>
                     <select class="rounded" name="travelClass">
-                        <option value="" disabled selected>Airline Class</option>
                         <option value="FIRST">First Class</option>
                         <option value="BUSINESS">Business Class</option>
-                        <option value="ECONOMY">Economy Class</option>
+                        <option value="ECONOMY" selected>Economy Class</option>
                     </select>
                 </div>
                 <div class="flex">
@@ -30,7 +29,7 @@ function FlightSearchBar() {
                         <input class="bg-transparent pr-8" type="text" name="destinationLocationCode" placeholder="Going to" required></input>
                     </div>
                     <input type="date" name="departureDate" placeholder="Departure Date" required></input>
-                    <input type="date" name="returnDate" placeholder="Return Date" required></input>
+                    <input class="peer-checked:invisible" type="date" name="returnDate" placeholder="Return Date" required></input>
                     <button class="mx-2">
                         <img src={search_icon}/>
                     </button>

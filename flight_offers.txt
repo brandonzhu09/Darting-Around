@@ -1,0 +1,1064 @@
+{
+  "flights": [
+    {
+      "id": "1",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 10m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T08:55:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T07:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H10M",
+              "id": "1"
+            }
+          ],
+          "departureTime": "07:45 AM",
+          "arrivalTime": "08:55 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 5m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-30T07:45:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T06:40:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H5M",
+              "id": "7"
+            }
+          ],
+          "departureTime": "06:40 AM",
+          "arrivalTime": "07:45 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T12:28:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T11:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "2"
+            }
+          ],
+          "departureTime": "11:15 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 5m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-30T07:45:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T06:40:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H5M",
+              "id": "7"
+            }
+          ],
+          "departureTime": "06:40 AM",
+          "arrivalTime": "07:45 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T19:58:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T18:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "3"
+            }
+          ],
+          "departureTime": "06:45 PM",
+          "arrivalTime": "07:58 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 5m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-30T07:45:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T06:40:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H5M",
+              "id": "7"
+            }
+          ],
+          "departureTime": "06:40 AM",
+          "arrivalTime": "07:45 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 14m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-29T07:00:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T05:46:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H14M",
+              "id": "4"
+            }
+          ],
+          "departureTime": "05:46 AM",
+          "arrivalTime": "07:00 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 5m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-30T07:45:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T06:40:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H5M",
+              "id": "7"
+            }
+          ],
+          "departureTime": "06:40 AM",
+          "arrivalTime": "07:45 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T16:56:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T15:40:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H16M",
+              "id": "5"
+            }
+          ],
+          "departureTime": "03:40 PM",
+          "arrivalTime": "04:56 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 5m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-30T07:45:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T06:40:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H5M",
+              "id": "7"
+            }
+          ],
+          "departureTime": "06:40 AM",
+          "arrivalTime": "07:45 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T21:46:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T20:30:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H16M",
+              "id": "6"
+            }
+          ],
+          "departureTime": "08:30 PM",
+          "arrivalTime": "09:46 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 5m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-30T07:45:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T06:40:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H5M",
+              "id": "7"
+            }
+          ],
+          "departureTime": "06:40 AM",
+          "arrivalTime": "07:45 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 10m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T08:55:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T07:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H10M",
+              "id": "1"
+            }
+          ],
+          "departureTime": "07:45 AM",
+          "arrivalTime": "08:55 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T11:12:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H16M",
+              "id": "8"
+            }
+          ],
+          "departureTime": "11:12 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T12:28:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T11:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "2"
+            }
+          ],
+          "departureTime": "11:15 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T11:12:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H16M",
+              "id": "8"
+            }
+          ],
+          "departureTime": "11:12 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T19:58:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T18:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "3"
+            }
+          ],
+          "departureTime": "06:45 PM",
+          "arrivalTime": "07:58 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T11:12:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H16M",
+              "id": "8"
+            }
+          ],
+          "departureTime": "11:12 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 14m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-29T07:00:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T05:46:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H14M",
+              "id": "4"
+            }
+          ],
+          "departureTime": "05:46 AM",
+          "arrivalTime": "07:00 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T11:12:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H16M",
+              "id": "8"
+            }
+          ],
+          "departureTime": "11:12 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T16:56:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T15:40:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H16M",
+              "id": "5"
+            }
+          ],
+          "departureTime": "03:40 PM",
+          "arrivalTime": "04:56 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T11:12:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H16M",
+              "id": "8"
+            }
+          ],
+          "departureTime": "11:12 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T21:46:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T20:30:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H16M",
+              "id": "6"
+            }
+          ],
+          "departureTime": "08:30 PM",
+          "arrivalTime": "09:46 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 16m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T11:12:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H16M",
+              "id": "8"
+            }
+          ],
+          "departureTime": "11:12 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 10m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T08:55:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T07:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H10M",
+              "id": "1"
+            }
+          ],
+          "departureTime": "07:45 AM",
+          "arrivalTime": "08:55 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 28m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T16:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T15:00:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H28M",
+              "id": "9"
+            }
+          ],
+          "departureTime": "03:00 PM",
+          "arrivalTime": "04:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 10m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T08:55:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T07:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H10M",
+              "id": "1"
+            }
+          ],
+          "departureTime": "07:45 AM",
+          "arrivalTime": "08:55 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 30m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-31T00:25:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T22:55:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H30M",
+              "id": "10"
+            }
+          ],
+          "departureTime": "10:55 PM",
+          "arrivalTime": "12:25 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T12:28:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T11:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "2"
+            }
+          ],
+          "departureTime": "11:15 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 28m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T16:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T15:00:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H28M",
+              "id": "9"
+            }
+          ],
+          "departureTime": "03:00 PM",
+          "arrivalTime": "04:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T19:58:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T18:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "3"
+            }
+          ],
+          "departureTime": "06:45 PM",
+          "arrivalTime": "07:58 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 28m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T16:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T15:00:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H28M",
+              "id": "9"
+            }
+          ],
+          "departureTime": "03:00 PM",
+          "arrivalTime": "04:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 14m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-29T07:00:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T05:46:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H14M",
+              "id": "4"
+            }
+          ],
+          "departureTime": "05:46 AM",
+          "arrivalTime": "07:00 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 28m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T16:28:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T15:00:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H28M",
+              "id": "9"
+            }
+          ],
+          "departureTime": "03:00 PM",
+          "arrivalTime": "04:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 10m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T08:55:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T07:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H10M",
+              "id": "1"
+            }
+          ],
+          "departureTime": "07:45 AM",
+          "arrivalTime": "08:55 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 32m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-30T18:42:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T17:10:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H32M",
+              "id": "11"
+            }
+          ],
+          "departureTime": "05:10 PM",
+          "arrivalTime": "06:42 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T12:28:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T11:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "2"
+            }
+          ],
+          "departureTime": "11:15 AM",
+          "arrivalTime": "12:28 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 30m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-31T00:25:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T22:55:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H30M",
+              "id": "10"
+            }
+          ],
+          "departureTime": "10:55 PM",
+          "arrivalTime": "12:25 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "lastTicketingDate": "2022-07-29",
+      "numberOfBookableSeats": 7,
+      "price": "327.00",
+      "oneWay": false,
+      "roundTrip": true,
+      "multiCity": false,
+      "trips": [
+        {
+          "duration": "1h 13m",
+          "originLocationCode": "BOS",
+          "destinatonLocationCode": "JFK",
+          "segments": [
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2022-07-29T19:58:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-29T18:45:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H13M",
+              "id": "3"
+            }
+          ],
+          "departureTime": "06:45 PM",
+          "arrivalTime": "07:58 PM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        },
+        {
+          "duration": "1h 30m",
+          "originLocationCode": "JFK",
+          "destinatonLocationCode": "BOS",
+          "segments": [
+            {
+              "aircraft": "320",
+              "arrivalTime": "2022-07-31T00:25:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "B6",
+              "departureTime": "2022-07-30T22:55:00",
+              "departureIataCode": "JFK",
+              "duration": "PT1H30M",
+              "id": "10"
+            }
+          ],
+          "departureTime": "10:55 PM",
+          "arrivalTime": "12:25 AM",
+          "airline": "JetBlue Airways",
+          "airlineLogo": ""
+        }
+      ]
+    }
+  ]
+}

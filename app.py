@@ -5,6 +5,7 @@ import requests
 
 from amadeus import Client, ResponseError
 import json
+from datetime import datetime
 
 
 app = Flask(__name__, static_url_path='', static_folder='client/build')
@@ -23,10 +24,10 @@ def home():
         print(request.form)
     return send_from_directory(app.static_folder, 'index.html')
 
-@app.route('/flights/<string:originLocationCode>/<string:destinationLocationCode>/<string:departureDate>/<string:returnDate>/<string:travelClass>')
-def flights(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass):
+@app.route('/flights/<string:originLocationCode>/<string:destinationLocationCode>/<string:departureDate>/<string:returnDate>/<string:travelClass>/<string:flightType>')
+def flights(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass, flightType):
     # Flight Offers Search GET request
-    result = flights_offer_search(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass)      
+    result = flights_offer_search(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass, flightType)      
     return result
 
 @app.route('/hotels/<string:cityCode>')
@@ -54,15 +55,24 @@ def rentals(location, departureDate, departureTime, returnDate, returnTime):
 
 # SYD, BKK, 2022-11-01, 2022-11-18, ECONOMY
 
-def flights_offer_search(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass="ECONOMY"):
-    response = amadeus.shopping.flight_offers_search.get(
-            originLocationCode=originLocationCode, 
-            destinationLocationCode=destinationLocationCode,
-            departureDate=departureDate,
-            returnDate=returnDate,
-            adults=1,
-            max=20,
-            travelClass=travelClass).result
+def flights_offer_search(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass, flightType):
+    if flightType == "oneWay":
+        response = amadeus.shopping.flight_offers_search.get(
+                originLocationCode=originLocationCode, 
+                destinationLocationCode=destinationLocationCode,
+                departureDate=departureDate,
+                adults=1,
+                max=20,
+                travelClass=travelClass).result
+    else:
+        response = amadeus.shopping.flight_offers_search.get(
+                originLocationCode=originLocationCode, 
+                destinationLocationCode=destinationLocationCode,
+                departureDate=departureDate,
+                returnDate=returnDate,
+                adults=1,
+                max=20,
+                travelClass=travelClass).result
 
     result = {} 
     result["flights"] = []   
@@ -91,8 +101,19 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
         for trip in flights["itineraries"]:
             flight["trips"].append({})
             trips = flight["trips"][-1]
-            trips["duration"] = trip["duration"]
+            trips["duration"] = trip["duration"].lower().replace("pt", "").replace("h", "h ")
+            trips["originLocationCode"] = trip["segments"][0]["departure"]["iataCode"]
+            trips["destinationLocationCode"] = trip["segments"][-1]["arrival"]["iataCode"]
+            trips["stops"] = len(trip["segments"])-1
             trips["segments"] = []
+            # parse time of departure to time of arrival
+            departureTime = trip["segments"][0]["departure"]["at"][11:-3]
+            arrivalTime = trip["segments"][-1]["arrival"]["at"][11:-3]
+            departureTime = datetime.strptime(departureTime, "%H:%M").strftime("%I:%M %p")
+            arrivalTime = datetime.strptime(arrivalTime, "%H:%M").strftime("%I:%M %p")
+            trips["departureTime"] = departureTime
+            trips["arrivalTime"] = arrivalTime
+            # keep a list of all airlines for the trip
             airlines = []
 
             for segment in trip["segments"]:
@@ -106,17 +127,20 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
                 segments["departureIataCode"] = segment["departure"]["iataCode"]
                 segments["duration"] = segment["duration"]
                 segments["id"] = segment["id"]
-                airlines.append(segments["carrierCode"])
+                airlines.append(segment["carrierCode"])
             
             airlines = set(airlines)
-            if airlines == 1: # only 1 airline for trip
+            if len(airlines) == 1: # only 1 airline for trip
                 airline = airlines.pop()
-                trips["airline"] = response["dictionaries"]["carriers"][airline]
+                airline_dict = airline_info(airline)
+                trips["airline"] = airline_dict["name"]
+                trips["airlineLogo"] = airline_dict["logo"]
             else:
-                trips["airline"] = "MULTIPLE AIRLINES"
+                trips["airline"] = "Multiple Airlines"
+                trips["airlineLogo"] = ""
 
     # GET REQUEST TO-FILE TEST (DELETE)
-    # with open("travel_offers_post.txt", 'w') as f:
+    # with open("flight_offers.txt", 'w') as f:
     #     json.dump(result, f, indent=2)
 
     return result
@@ -170,4 +194,17 @@ def rentals_offer_search(location, departureDate, departureTime, returnDate, ret
         vehicleRates[vehicle]["returnLocation"] = partnerLocations[returnLocationId]
         vehicles.append(vehicleRates[vehicle])
     result["vehicleRates"] = vehicles 
+    return result
+
+def airline_info(carrierCode):
+    url = 'https://airlines-by-api-ninjas.p.rapidapi.com/v1/airlines'
+    params = {'iata': carrierCode} if len(carrierCode) == 2 else {'icao': carrierCode}
+    headers = {
+        'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
+        'X-RapidAPI-Host': 'airlines-by-api-ninjas.p.rapidapi.com'
+    }
+    response = requests.get(url, params=params, headers=headers).json()
+    result = {}
+    result["name"] = response[0]["name"]
+    result["logo"] = response[0]["logo_url"] if "logo_url" in response[0] else ""
     return result

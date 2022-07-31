@@ -19,6 +19,9 @@ module.exports = {
       },
       fontFamily: {
         body: ['Monda'],
+      },
+      maxWidth: {
+        'xxs': '250px',
       }
     },
   },

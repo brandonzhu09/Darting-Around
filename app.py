@@ -30,9 +30,9 @@ def flights(originLocationCode, destinationLocationCode, departureDate, returnDa
     result = flights_offer_search(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass, flightType)      
     return result
 
-@app.route('/hotels/<string:cityCode>')
-def hotels(cityCode):
-    result = hotels_offer_search(cityCode)
+@app.route('/hotels/<string:location>/<string:departureDate>/<string:returnDate>')
+def hotels(location, departureDate, returnDate):
+    result = hotels_offer_search(location, departureDate, returnDate)
     return result
 
 @app.route('/location')
@@ -145,10 +145,6 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
 
     return result
 
-def hotels_offer_search(cityCode):
-    response = amadeus.shopping.hotel_offers.get(cityCode=cityCode).result
-    return response
-
 def flights_most_booked(originCityCode, period):
     response = amadeus.travel.analytics.air_traffic.booked.get(originCityCode=originCityCode, period=period, max=10).result
     id = 1
@@ -157,15 +153,44 @@ def flights_most_booked(originCityCode, period):
         id += 1
     return response
 
-def car_locations_search(location):
-    url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/locations',
-    params = {'name': 'Heathrow Airport'},
+def airline_info(carrierCode):
+    url = 'https://airlines-by-api-ninjas.p.rapidapi.com/v1/airlines'
+    params = {'iata': carrierCode} if len(carrierCode) == 2 else {'icao': carrierCode}
     headers = {
         'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
-        'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
+        'X-RapidAPI-Host': 'airlines-by-api-ninjas.p.rapidapi.com'
     }
-    response = requests.get(url, params=params, headers=headers)
-    return {'locationID': response[0][0]["cityID"], 'latitude': response[0][0]["lat"], 'longitude': response[0][0]["lon"]}
+    response = requests.get(url, params=params, headers=headers).json()
+    result = {}
+    result["name"] = response[0]["name"]
+    result["logo"] = response[0]["logo_url"] if "logo_url" in response[0] else ""
+    return result
+
+def hotels_offer_search(location, departureDate, returnDate):
+    city_id = get_city_id(location)
+    url = "https://priceline-com-provider.p.rapidapi.com/v1/hotels/search"
+    params = {
+        "sort_order":"STAR",
+        "location_id":city_id,
+        "date_checkout":returnDate,
+        "date_checkin":departureDate
+    }
+    headers = {
+        "X-RapidAPI-Key": "9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554",
+        "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com"
+    }
+    response = response.get(url, params=params, headers=headers).json()
+    return response["hotels"]
+
+def get_city_id(location):
+    url = "https://priceline-com-provider.p.rapidapi.com/v1/hotels/locations"
+    params = {"name":location,"search_type":"CITY"}
+    headers = {
+        "X-RapidAPI-Key": "9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554",
+        "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com"
+    }
+    response = requests.get(url, headers=headers, params=params).json()
+    return response[0]["cityID"]
 
 def rentals_offer_search(location, departureDate, departureTime, returnDate, returnTime, max=20):
     # locationID = car_locations_search(location)['locationID']
@@ -196,15 +221,12 @@ def rentals_offer_search(location, departureDate, departureTime, returnDate, ret
     result["vehicleRates"] = vehicles 
     return result
 
-def airline_info(carrierCode):
-    url = 'https://airlines-by-api-ninjas.p.rapidapi.com/v1/airlines'
-    params = {'iata': carrierCode} if len(carrierCode) == 2 else {'icao': carrierCode}
+def car_locations_search(location):
+    url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/locations',
+    params = {'name': 'Heathrow Airport'},
     headers = {
         'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
-        'X-RapidAPI-Host': 'airlines-by-api-ninjas.p.rapidapi.com'
+        'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
     }
-    response = requests.get(url, params=params, headers=headers).json()
-    result = {}
-    result["name"] = response[0]["name"]
-    result["logo"] = response[0]["logo_url"] if "logo_url" in response[0] else ""
-    return result
+    response = requests.get(url, params=params, headers=headers)
+    return {'locationID': response[0][0]["cityID"], 'latitude': response[0][0]["lat"], 'longitude': response[0][0]["lon"]}

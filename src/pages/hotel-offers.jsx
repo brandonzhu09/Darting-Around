@@ -9,37 +9,46 @@ export default function HotelOffers() {
     const [hotels, setHotels] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const cityCode = searchParams.get("cityCode") 
+    const location = searchParams.get("location") 
     const departureDate = searchParams.get("departureDate")
     const returnDate = searchParams.get("returnDate")
 
-    useEffect(()=>{
-        axios.get(`http://localhost:5000/hotels/${cityCode}`).then(response => {
-            console.log("SUCCESS", response)
-            setHotels(JSON.parse(JSON.stringify(response.data.data)))
-            setLoading(false)
-        }).catch(error => {
-            console.log(error)
-        })
+    const amenitiesCode = {
+        "FINTRNT": "Free Internet Access",
+        "HEALTHSVCS": "Health Services",
+        "RESTRNT": "Restaurant",
+        "NSMKFAC": "No Smoking Rooms/Facitilies"
+    }
 
-    }, [cityCode])
+    // useEffect(()=>{
+    //     axios.get(`http://localhost:5000/hotels/${location}/${departureDate}/${returnDate}`).then(response => {
+    //         console.log("SUCCESS", response)
+    //         setHotels(JSON.parse(JSON.stringify(response.data.data)))
+    //         setLoading(false)
+    //     }).catch(error => {
+    //         console.log(error)
+    //     })
+
+    // }, [location, departureDate, returnDate])
 
     return ( 
         <div>
-            {loading === false ? (
+            {<HotelCard key={1} name={"The Westin Buffalo"} location={"Downtown Buffalo"} price={"$238"} rating={4.5} amenities={["Breakfast included", "Free WiFi Access"]}/>}
+            {/* {loading === false ? (
                 hotels.map((hotel) => <HotelCard 
-                                        key={hotel.offers[0].id} 
-                                        id={hotel.hotel.hotelId} 
-                                        name={hotel.hotel.name}
-                                        price={hotel.offers[0].price.total} 
-                                        amenities={hotel.hotel.amenities}
-                                        location={{"address":hotel.hotel.address.lines, "latitude":hotel.hotel.latitude, "longitude":hotel.hotel.longitude}}
-                                        contact={hotel.hotel.contact}
-                                        rating={hotel.hotel.rating}
+                                        key={hotel.hotelId} 
+                                        id={hotel.hotelId} 
+                                        name={hotel.name}
+                                        address={hotel.location.address.addressLine1}
+                                        location={location}
+                                        price={hotel.ratesSummary.minPrice} 
+                                        amenities={hotel.hotelFeatures.hotelAmenityCodes}
+                                        rating={hotel.starRating}
+                                        image={hotel.media.url}
                                         departureDate={departureDate}
                                         returnDate={returnDate}
                                                  />)
-            ) : <LoadingScreen />}
+            ) : <LoadingScreen />} */}
         </div>
      );
 }

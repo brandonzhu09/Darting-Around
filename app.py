@@ -170,7 +170,7 @@ def hotels_offer_search(location, departureDate, returnDate):
     city_id = get_city_id(location)
     url = "https://priceline-com-provider.p.rapidapi.com/v1/hotels/search"
     params = {
-        "sort_order":"STAR",
+        "sort_order":"HDR", # HDR, PRICE, STAR, PROXIMITY, DEALS
         "location_id":city_id,
         "date_checkout":returnDate,
         "date_checkin":departureDate
@@ -179,8 +179,8 @@ def hotels_offer_search(location, departureDate, returnDate):
         "X-RapidAPI-Key": "9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554",
         "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com"
     }
-    response = response.get(url, params=params, headers=headers).json()
-    return response["hotels"]
+    response = requests.get(url, params=params, headers=headers).json()
+    return response
 
 def get_city_id(location):
     url = "https://priceline-com-provider.p.rapidapi.com/v1/hotels/locations"
@@ -190,8 +190,8 @@ def get_city_id(location):
         "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=params).json()
-    return response[0]["cityID"]
-
+    return -1 if len(response) == 0 else response[0]["cityID"]
+    
 def rentals_offer_search(location, departureDate, departureTime, returnDate, returnTime, max=20):
     # locationID = car_locations_search(location)['locationID']
     url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/search'

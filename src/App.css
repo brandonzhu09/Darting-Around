@@ -18,9 +18,5 @@ nav {
 
 .nav-links ul li {
   display: inline-block;
-  justify-content: left;
-}
-
-.nav-links li {
   justify-content: right;
 }

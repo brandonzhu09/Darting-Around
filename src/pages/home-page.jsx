@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import flightIcon from '../assets/flight_icon.png';
 import hotelIcon from '../assets/hotel_icon.png';
 import destinationIcon from '../assets/destination_icon.png';
@@ -8,16 +9,8 @@ function HomePage() {
     return ( 
         <div class="font-body">
             <header class="bg-hero-header opacity-70 bg-cover h-128 relative">
-                <nav class="">
-                    <ul class="flex text-gray-300 text-lg list-none justify-center">
-                        <li class="ml-10"><a href="/flights"></a></li>
-                        <li class="ml-10"><a href="/hotels"></a></li>
-                        <li class="ml-10"><a href="/rentals"></a></li>
-                        <li class="ml-10"><a href="/profile"></a></li>
-                        <li class="ml-10"><a href="/"></a></li>
-                    </ul>
-                </nav>
-                <div class="mt-24 text-white pl-10 drop-shadow-md">
+                <Navbar />
+                <div class="mt-20 text-white pl-10 drop-shadow-md">
                     <h1 class="pt-10 text-6xl sm:text-5xl">Make your next move.</h1>
                     <h3 class="pt-10 text-4xl sm:text-3xl break-words">Don't know where to go for vacation? Click here to start your new adventure!</h3>
                 </div>

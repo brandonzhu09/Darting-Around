@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from '../components/Navbar';
 import FlightSearchBar from '../components/FlightSearchBar';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 function FlightSearch() {
 
@@ -24,9 +27,10 @@ function FlightSearch() {
     // }, [])
 
     return ( 
-        <div class="bg-flight-header opacity-70 bg-cover h-screen font-body px-8 py-16">
+        <div class="bg-flight-header opacity-70 bg-cover h-screen font-body px-8">
+            <Navbar />
             <img class="object-fill" />
-            <h1 class="text-4xl mb-12 font-bold">Pick a place and let's fly.</h1>
+            <h1 class="text-4xl my-12 font-bold">Pick a place and let's fly.</h1>
             <FlightSearchBar />
         </div>
      );

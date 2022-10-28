@@ -7,20 +7,23 @@ import cardImage from '../assets/card_image.png';
 
 function HomePage() {
     return ( 
-        <div class="font-body">
-            <header class="bg-hero-header opacity-70 bg-cover h-128 relative">
-                <Navbar />
-                <div class="mt-20 text-white pl-10 drop-shadow-md">
-                    <h1 class="pt-10 text-6xl sm:text-5xl">Make your next move.</h1>
-                    <h3 class="pt-10 text-4xl sm:text-3xl break-words">Don't know where to go for vacation? Click here to start your new adventure!</h3>
-                </div>
-                <div class="mt-10 flex justify-center text-black">
-                    <button class="text-center px-8 py-4 ml-4 border border-black rounded hover:bg-secondary">
-                        <span class="get-started">Play Darts!</span>
-                    </button>
-                    <button class="text-center px-8 py-4 ml-4 border border-black rounded hover:bg-secondary">
-                        <span class="learn-more">Learn More</span>
-                    </button>
+        <div class="font-body bg-hero-header opacity-70 bg-cover h-screen">
+            <Navbar />
+            <img class="object-fill" />
+            <header class="relative">
+                <div class="absolute inset-y-1/4">
+                    <div class="text-white pl-10 drop-shadow-md">
+                        <h1 class="pt-10 text-6xl sm:text-5xl">Make your next move.</h1>
+                        <h3 class="pt-10 text-4xl sm:text-3xl break-words">Don't know where to go for vacation? Click here to start your new adventure!</h3>
+                    </div>
+                    <div class="mt-10 flex justify-center text-black">
+                        <button class="text-center px-8 py-4 ml-4 border border-black rounded hover:bg-secondary transition delay-150">
+                            <span class="get-started">Play Darts!</span>
+                        </button>
+                        <button class="text-center px-8 py-4 ml-4 border border-black rounded hover:bg-secondary transition delay-150">
+                            <span class="learn-more">Learn More</span>
+                        </button>
+                    </div>
                 </div>
             </header>
             <div class="flex items-baseline text-center justify-center pt-10">

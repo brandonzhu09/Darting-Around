@@ -27,11 +27,13 @@ function FlightSearch() {
     // }, [])
 
     return ( 
-        <div class="bg-flight-header opacity-70 bg-cover h-screen font-body px-8">
+        <div class="bg-flight-header opacity-70 bg-cover h-screen font-body">
             <Navbar />
             <img class="object-fill" />
-            <h1 class="text-4xl my-12 font-bold">Pick a place and let's fly.</h1>
-            <FlightSearchBar />
+            <div class="pt-36 px-8">
+                <h1 class="text-4xl mb-10 font-bold">Pick a place and let's fly.</h1>
+                <FlightSearchBar />
+            </div>
         </div>
      );
 }

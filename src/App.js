@@ -15,6 +15,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/flights" element={<FlightSearch />}/>

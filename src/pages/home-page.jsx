@@ -8,7 +8,6 @@ import cardImage from '../assets/card_image.png';
 function HomePage() {
     return ( 
         <div class="font-body bg-hero-header opacity-70 bg-cover h-screen">
-            <Navbar />
             <img class="object-fill" />
             <header class="relative">
                 <div class="absolute inset-y-1/4">

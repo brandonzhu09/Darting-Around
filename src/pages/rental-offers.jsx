@@ -27,7 +27,7 @@ export default function RentalOffers() {
     }, [location, departureDate, departureTime, returnDate, returnTime])
 
     return ( 
-        <div>
+        <div class="mt-32">
             {loading === false ? (
             rentals.map((rental) => <RentalCard 
                                         key={rental.id} 

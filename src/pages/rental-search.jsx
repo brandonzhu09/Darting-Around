@@ -7,7 +7,6 @@ import Navbar from '../components/Navbar';
 function RentalSearch() {
     return ( 
         <div class="bg-rental-header opacity-70 bg-cover h-screen font-body">
-            <Navbar />
             <img class="object-fill" />
             <div class="pt-36 px-8">
                 <h1 class="text-4xl mb-12 font-bold">Go where the roads take you.</h1>

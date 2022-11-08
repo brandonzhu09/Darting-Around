@@ -30,7 +30,7 @@ export default function FlightOffers() {
     }, [originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass, flightType])
 
     return ( 
-        <div>
+        <div class="mt-32">
             {loading === false ? (
                 <>
                 <div class="flex justify-center my-10">

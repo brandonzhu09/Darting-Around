@@ -40,7 +40,7 @@ export default function HotelOffers() {
     }, [location, departureDate, returnDate])
 
     return ( 
-        <div>
+        <div class="mt-32">
             {/* <HotelCard key={1} name={"The Westin Buffalo"} location={"Downtown Buffalo"} image={hotelImage} price={"$238"} rating={4.5} amenities={["Breakfast included", "Free WiFi Access"]}/> */}
             {loading === false ? (
                 <>

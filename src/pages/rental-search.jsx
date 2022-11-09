@@ -14,7 +14,10 @@ function RentalSearch() {
                 <div class="rental-search">
                     <form action="rentals/offers">
                         <div class="flex">
-                            <SearchButton key="rentalLocation" name="location" placeholder="Enter location here" image={destination_icon}/>
+                            <div class="flex bg-gray-300 rounded py-2 mr-2">
+                                <img class="px-2" src={destination_icon} alt="destination-icon"/>
+                                <input class="bg-transparent after:bg-transparent pr-8" type="text" name="location" placeholder="Leaving From" required></input>
+                            </div>
                             <input class="ml-2 rounded-l" type="date" name="departureDate"></input>
                             <select class="mr-2 rounded-r" name="departureTime">
                                 <option value="" disabled selected>Pickup</option>

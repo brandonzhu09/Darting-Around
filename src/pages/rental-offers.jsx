@@ -29,21 +29,31 @@ export default function RentalOffers() {
     return ( 
         <div>
             {loading === false ? (
-            rentals.map((rental) => <RentalCard 
-                                        key={rental.id} 
-                                        id={rental.id} 
-                                        name={rental.vehicleInfo.vehicleExample}
-                                        description={rental.vehicleInfo.description}
-                                        price={rental.rates.USD.basePrices.TOTAL} 
-                                        pickUpLocation={rental.pickUpLocation.address}
-                                        returnLocation={rental.returnLocation.address}
-                                        images={rental.vehicleInfo.images}
-                                        peopleCapacity={rental.vehicleInfo.peopleCapacity}
-                                        bagCapacity={rental.vehicleInfo.bagCapacity}
-                                        departureDate={departureDate}
-                                        returnDate={returnDate}
-                                                 />)
-            ) : <LoadingScreen />}
+                <>
+                {rentals.length > 0 ?
+                <div class="flex flex-wrap justify-center">
+                    {rentals.map((rental) => <RentalCard 
+                        key={rental.id} 
+                        id={rental.id} 
+                        name={rental.vehicleInfo.vehicleExample}
+                        description={rental.vehicleInfo.description}
+                        price={rental.rates.USD.basePrices.TOTAL} 
+                        pickUpLocation={rental.pickUpLocation.address}
+                        returnLocation={rental.returnLocation.address}
+                        images={rental.vehicleInfo.images}
+                        peopleCapacity={rental.vehicleInfo.peopleCapacity}
+                        bagCapacity={rental.vehicleInfo.bagCapacity}
+                        departureDate={departureDate}
+                        returnDate={returnDate} 
+                        partnerImg={rental.partnerImg}/>)
+                    }
+                </div>
+                :
+                <div class="flex flex-col">
+                    <h1 class="m-auto text-3xl text-center">No rentals found.</h1>
+                </div>}
+                </>
+            ) : <LoadingScreen /> }
         </div>
      );
 }

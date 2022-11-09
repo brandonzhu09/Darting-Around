@@ -45,3 +45,39 @@ nav {
 .cta:hover {
   background-color:rgb(2, 107, 133);
 }
+
+.rental-card {
+  display:grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-auto-rows: 100px;
+}
+
+.rental-card .description-box {
+  grid-column-start:1;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+
+.rental-card .price-box {
+  grid-column-start:3;
+  grid-column-end:4;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+
+.rental-card .img-box {
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:2;
+  grid-row-end:3;
+}
+
+.destination-box {
+  grid-column-start:2;
+  grid-column-end:4;
+  grid-row-start:2;
+  grid-row-end:3;
+
+  align-items:center;
+}

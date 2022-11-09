@@ -182,19 +182,21 @@ def get_city_id(location):
     return -1 if len(response) == 0 else response[0]["cityID"]
     
 def rentals_offer_search(location, departureDate, departureTime, returnDate, returnTime, max=20):
-    # locationID = car_locations_search(location)['locationID']
+    locationID = car_locations_search(location)
     url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/search'
     params = {
-    'location_pickup': 'JFK',
+    'location_pickup': str(locationID),
     'date_time_pickup': "{} {}".format(departureDate, departureTime),
     'date_time_return': "{} {}".format(returnDate, returnTime),
-    'location_return': '1365100023'
+    'location_return': str(locationID)
     }
     headers = {
     'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
     'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
     }
     response = requests.get(url, params=params, headers=headers).json()
+    if len(response) == 0:
+        return {"vehicleRates": []}
     vehicleRates = response["vehicleRates"]
     partnerLocations = response["partnerLocations"]
     result = {}
@@ -206,16 +208,20 @@ def rentals_offer_search(location, departureDate, departureTime, returnDate, ret
         returnLocationId = vehicleRates[vehicle]["partnerInfo"]["returnLocationId"]
         vehicleRates[vehicle]["pickUpLocation"] = partnerLocations[pickupLocationId]
         vehicleRates[vehicle]["returnLocation"] = partnerLocations[returnLocationId]
+
+        partnerCode = vehicleRates[vehicle]["partnerCode"]
+        vehicleRates[vehicle]["partner"] = response["partners"][partnerCode]["partnerName"]
+        vehicleRates[vehicle]["partnerImg"] = response["partners"][partnerCode]["images"]["SIZE88X44"]
         vehicles.append(vehicleRates[vehicle])
     result["vehicleRates"] = vehicles 
     return result
 
 def car_locations_search(location):
-    url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/locations',
-    params = {'name': 'Heathrow Airport'},
+    url = "https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/locations"
+    params = {"name": location}
     headers = {
-        'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
-        'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
+        "X-RapidAPI-Key": "9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554",
+        "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com"
     }
-    response = requests.get(url, params=params, headers=headers)
-    return {'locationID': response[0][0]["cityID"], 'latitude': response[0][0]["lat"], 'longitude': response[0][0]["lon"]}
+    response = requests.get(url, headers=headers, params=params).json()
+    return response[0]["cityID"] 

@@ -10,7 +10,7 @@ from datetime import datetime
 
 app = Flask(__name__, static_url_path='', static_folder='client/build')
 CORS(app)
-api = Api(app)
+# api = Api(app)
 
 amadeus = Client(
     client_id='AKrea0eBDJ91WvqGAeqGjVlO8xQ1AerM',

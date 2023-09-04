@@ -18,6 +18,7 @@ ipstack_access_key = "3a756b58ab702c90a06b4515c2162930"
 def flights(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass, flightType):
     # Flight Offers Search GET request
     result = flights_offer_search(originLocationCode, destinationLocationCode, departureDate, returnDate, travelClass, flightType)      
+    print(result)
     return result
 
 @api.route('/hotels/<string:location>/<string:departureDate>/<string:returnDate>')
@@ -63,6 +64,9 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
                 adults=1,
                 max=20,
                 travelClass=travelClass).result
+    
+    
+    print(response)
     result = {} 
     result["flights"] = []   
     for flights in response["data"]:
@@ -128,9 +132,9 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
                 trips["airline"] = "Multiple Airlines"
                 trips["airlineLogo"] = ""
 
-    # GET REQUEST TO-FILE TEST (DELETE)
-    # with open("flight_offers.txt", 'w') as f:
-    #     json.dump(result, f, indent=2)
+    #GET REQUEST TO-FILE TEST (DELETE)
+    with open("flight_offers.txt", 'w') as f:
+        json.dump(result, f, indent=2)
 
     return result
 

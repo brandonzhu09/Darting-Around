@@ -1,4 +1,5 @@
 import InputField from "../components/InputField";
+import Checkbox from "../components/CheckBox";
 
 function TravelQuestionnaire() {
   return (
@@ -19,89 +20,32 @@ function TravelQuestionnaire() {
 
         <label class="mt-2 text-md">General interests/hobbies: </label>
         <div class="interests flex flex-col">
-          <div>
-            <input class="mx-2" type="checkbox" id="beach" />
-            <label class="" for="beach">
-              Beach / Water sports
-            </label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" id="adventure" />
-            <label class="">Adventure</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Biking</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Music & Theater</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Historical sites</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Fashion / Shopping</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Dining</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="other" />
-            <label class="">Other</label>
-          </div>
+          <Checkbox id="beach" label="Beach / Water sports" />
+          <Checkbox id="adventure" label="Adventure" />
+          <Checkbox id="biking" label="Biking" />
+          <Checkbox id="music" label="Music & Theater" />
+          <Checkbox id="historic_sites" label="Historical sites" />
+          <Checkbox id="fashion" label="Fashion / Shopping" />
+          <Checkbox id="dining" label="Dining" />
+          <Checkbox id="interests-other" type="other" label="Other" />
         </div>
 
         <label class="pt-4 text-md">Accommodations "must haves":</label>
         <div class="accommodations flex flex-col">
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Views</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="adventure" />
-            <label class="">Luxury</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Boutique</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Pool</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Gym & Fitness</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">Other</label>
-          </div>
+          <Checkbox id="views" label="Views" />
+          <Checkbox id="luxury" label="Luxury" />
+          <Checkbox id="boutique" label="Boutique" />
+          <Checkbox id="pool" label="Pool" />
+          <Checkbox id="gym" label="Gym & Fitness" />
+          <Checkbox id="accommodations-other" type="other" label="Other" />
         </div>
 
         <label class="pt-4 text-md">Budget for this trip: </label>
         <div class="budget flex flex-col">
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">$0 - $6,000</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="adventure" />
-            <label class="">$6,000 - $10,000</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">$10,000 - $15,000</label>
-          </div>
-          <div>
-            <input class="mx-2" type="checkbox" name="beach" />
-            <label class="">$15,000+</label>
-          </div>
-
+          <Checkbox id="budget-1" label="$0 - $6,000" />
+          <Checkbox id="budget-2" label="$6,000 - $10,000" />
+          <Checkbox id="budget-3" label="$10,000 - $15,000" />
+          <Checkbox id="budget-4" label="$15,000+" />
           <button
             class="mt-4 text-white w-fit bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             type="submit"

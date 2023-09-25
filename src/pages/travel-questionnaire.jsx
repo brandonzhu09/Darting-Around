@@ -1,8 +1,8 @@
 import InputField from "../components/InputField";
-import Checkbox from "../components/CheckBox";
 import FormWizard from "react-form-wizard-component";
 import "react-form-wizard-component/dist/style.css";
 import ListView from "../components/ListView";
+import CheckBoxCard from "../components/CheckBoxCard";
 
 function TravelQuestionnaire() {
   return (
@@ -32,8 +32,25 @@ function TravelQuestionnaire() {
           </div>
         </FormWizard.TabContent>
         <FormWizard.TabContent title="General Interests" icon="ti-heart">
-          <h3>Second Tab</h3>
-          <p>Some content for the second tab</p>
+          <div class="w-5/12 m-auto">
+            <h3 class="text-3xl font-bold mt-4">
+              Pick your interests and hobbies
+            </h3>
+            <p class="mt-2 mb-4">
+              Check all the boxes of activities you are interested in doing on
+              your vacation:
+            </p>
+          </div>
+          <div class="flex flex-wrap">
+            <CheckBoxCard label="Beach / Water Sports" />
+            <CheckBoxCard label="Adventure" />
+            <CheckBoxCard label="Biking" />
+            <CheckBoxCard label="Music & Theater" />
+            <CheckBoxCard label="Historical Sites" />
+            <CheckBoxCard label="Fashion / Shopping" />
+            <CheckBoxCard label="Dining" />
+            <CheckBoxCard label="Climbing" />
+          </div>
         </FormWizard.TabContent>
         <FormWizard.TabContent title="Accommodations" icon="ti-home">
           <h3>Second Tab</h3>

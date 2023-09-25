@@ -25,7 +25,7 @@ function CheckBoxCard(props) {
       Climbing: climbing,
     };
     setImage(images[props.label]);
-  });
+  }, [props.label]);
 
   const cardClicked = (e) => {
     setClicked(!clicked);

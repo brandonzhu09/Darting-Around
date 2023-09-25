@@ -51,7 +51,6 @@ export default function FlightOffers() {
           </div>
           {flights.length > 0 ? (
             <div class="flex flex-wrap">
-              {/* <FlightCard key={1} origin={"BOS"} destination={"DUB"} price={"$123"} duration={"6H37M"} seats={6} /> */}
               {flights.map((flight) => (
                 <FlightCard
                   key={flight.id}

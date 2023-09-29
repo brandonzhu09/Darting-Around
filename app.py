@@ -6,17 +6,20 @@ import requests
 from amadeus import Client, ResponseError
 import json
 from datetime import datetime
-
+from os import environ as env
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__, static_url_path='', static_folder='client/build')
 CORS(app)
-api = Api(app)
+# api = Api(app)
 
 amadeus = Client(
-    client_id='AKrea0eBDJ91WvqGAeqGjVlO8xQ1AerM',
-    client_secret='Uy3NfIYH9yZSxAjA'
+    client_id=env['AMADEUS_CLIENT_ID'],
+    client_secret=env['AMADEUS_CLIENT_SECRET']
 )
-ipstack_access_key = "3a756b58ab702c90a06b4515c2162930"
+
+rapid_api_key = env['RAPID_API_KEY']
 
 @app.route('/', methods=["GET","POST"])
 def home():
@@ -73,6 +76,7 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
                 adults=1,
                 max=20,
                 travelClass=travelClass).result
+    
 
     result = {} 
     result["flights"] = []   
@@ -139,9 +143,9 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
                 trips["airline"] = "Multiple Airlines"
                 trips["airlineLogo"] = ""
 
-    # GET REQUEST TO-FILE TEST (DELETE)
-    # with open("flight_offers.txt", 'w') as f:
-    #     json.dump(result, f, indent=2)
+    #GET REQUEST TO-FILE TEST (DELETE)
+    with open("flight_offers.txt", 'w') as f:
+        json.dump(result, f, indent=2)
 
     return result
 
@@ -157,7 +161,7 @@ def airline_info(carrierCode):
     url = 'https://airlines-by-api-ninjas.p.rapidapi.com/v1/airlines'
     params = {'iata': carrierCode} if len(carrierCode) == 2 else {'icao': carrierCode}
     headers = {
-        'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
+        'X-RapidAPI-Key': rapid_api_key,
         'X-RapidAPI-Host': 'airlines-by-api-ninjas.p.rapidapi.com'
     }
     response = requests.get(url, params=params, headers=headers).json()
@@ -176,7 +180,7 @@ def hotels_offer_search(location, departureDate, returnDate):
         "date_checkin":departureDate
     }
     headers = {
-        "X-RapidAPI-Key": "9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554",
+        "X-RapidAPI-Key": rapid_api_key,
         "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com"
     }
     response = requests.get(url, params=params, headers=headers).json()
@@ -186,10 +190,11 @@ def get_city_id(location):
     url = "https://priceline-com-provider.p.rapidapi.com/v1/hotels/locations"
     params = {"name":location,"search_type":"CITY"}
     headers = {
-        "X-RapidAPI-Key": "9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554",
+        "X-RapidAPI-Key": rapid_api_key,
         "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=params).json()
+    print(response)
     return -1 if len(response) == 0 else response[0]["cityID"]
     
 def rentals_offer_search(location, departureDate, departureTime, returnDate, returnTime, max=20):
@@ -202,7 +207,7 @@ def rentals_offer_search(location, departureDate, departureTime, returnDate, ret
     'location_return': '1365100023'
     }
     headers = {
-    'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
+    'X-RapidAPI-Key': rapid_api_key,
     'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
     }
     response = requests.get(url, params=params, headers=headers).json()
@@ -225,7 +230,7 @@ def car_locations_search(location):
     url = 'https://priceline-com-provider.p.rapidapi.com/v1/cars-rentals/locations',
     params = {'name': 'Heathrow Airport'},
     headers = {
-        'X-RapidAPI-Key': '9170b9edb5msh685e613e1dbfc98p162176jsn94b64470b554',
+        'X-RapidAPI-Key': rapid_api_key,
         'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
     }
     response = requests.get(url, params=params, headers=headers)

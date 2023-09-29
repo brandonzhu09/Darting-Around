@@ -10,11 +10,13 @@ import RentalSearch from './pages/rental-search'
 import RentalOffers from './pages/rental-offers'
 import HomePage from './pages/home-page'
 import ErrorPage from './pages/error'
+import TravelQuestionnaire from './pages/travel-questionnaire'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/flights" element={<FlightSearch />}/>
@@ -23,6 +25,7 @@ function App() {
         <Route path="/hotels/offers" element={<HotelOffers />} />
         <Route path="/rentals" element={<RentalSearch />} />
         <Route path="/rentals/offers" element={<RentalOffers />} />
+        <Route path="/travel/form" element={<TravelQuestionnaire />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

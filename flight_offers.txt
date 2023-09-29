@@ -2,52 +2,74 @@
   "flights": [
     {
       "id": "1",
-      "lastTicketingDate": "2022-07-29",
+      "lastTicketingDate": "2023-09-26",
       "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "price": "250.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 10m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "4h 37m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
               "aircraft": "E90",
-              "arrivalTime": "2022-07-29T08:55:00",
-              "arrivalIataCode": "JFK",
+              "arrivalTime": "2023-10-05T14:49:00",
+              "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-29T07:45:00",
+              "departureTime": "2023-10-05T13:20:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H29M",
+              "id": "9"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-10-05T17:57:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "B6",
+              "departureTime": "2023-10-05T16:25:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H10M",
-              "id": "1"
+              "duration": "PT1H32M",
+              "id": "10"
             }
           ],
-          "departureTime": "07:45 AM",
-          "arrivalTime": "08:55 AM",
+          "departureTime": "01:20 PM",
+          "arrivalTime": "05:57 PM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         },
         {
-          "duration": "1h 5m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "11h 5m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-30T07:45:00",
+              "aircraft": "E90",
+              "arrivalTime": "2023-11-14T22:10:00",
               "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-30T06:40:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H5M",
-              "id": "7"
+              "departureTime": "2023-11-14T20:45:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H25M",
+              "id": "19"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-11-15T07:50:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "B6",
+              "departureTime": "2023-11-15T06:17:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H33M",
+              "id": "20"
             }
           ],
-          "departureTime": "06:40 AM",
-          "arrivalTime": "07:45 AM",
+          "departureTime": "08:45 PM",
+          "arrivalTime": "07:50 AM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         }
@@ -55,52 +77,74 @@
     },
     {
       "id": "2",
-      "lastTicketingDate": "2022-07-29",
+      "lastTicketingDate": "2023-09-26",
       "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "price": "250.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "4h 37m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
               "aircraft": "E90",
-              "arrivalTime": "2022-07-29T12:28:00",
-              "arrivalIataCode": "JFK",
+              "arrivalTime": "2023-10-05T14:49:00",
+              "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-29T11:15:00",
+              "departureTime": "2023-10-05T13:20:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H29M",
+              "id": "9"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-10-05T17:57:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "B6",
+              "departureTime": "2023-10-05T16:25:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "2"
+              "duration": "PT1H32M",
+              "id": "10"
             }
           ],
-          "departureTime": "11:15 AM",
-          "arrivalTime": "12:28 PM",
+          "departureTime": "01:20 PM",
+          "arrivalTime": "05:57 PM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         },
         {
-          "duration": "1h 5m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "12h 10m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-30T07:45:00",
+              "aircraft": "E90",
+              "arrivalTime": "2023-11-14T11:14:00",
               "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-30T06:40:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H5M",
-              "id": "7"
+              "departureTime": "2023-11-14T09:50:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H24M",
+              "id": "23"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-11-14T22:00:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "B6",
+              "departureTime": "2023-11-14T20:25:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H35M",
+              "id": "24"
             }
           ],
-          "departureTime": "06:40 AM",
-          "arrivalTime": "07:45 AM",
+          "departureTime": "09:50 AM",
+          "arrivalTime": "10:00 PM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         }
@@ -108,423 +152,599 @@
     },
     {
       "id": "3",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "252.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "5h 42m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T19:58:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T18:45:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "3"
+              "aircraft": "32N",
+              "arrivalTime": "2023-10-05T20:52:00",
+              "arrivalIataCode": "ATL",
+              "carrierCode": "F9",
+              "departureTime": "2023-10-05T18:39:00",
+              "departureIataCode": "BUF",
+              "duration": "PT2H13M",
+              "id": "13"
+            },
+            {
+              "aircraft": "32N",
+              "arrivalTime": "2023-10-06T00:21:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "F9",
+              "departureTime": "2023-10-05T22:30:00",
+              "departureIataCode": "ATL",
+              "duration": "PT1H51M",
+              "id": "14"
             }
           ],
-          "departureTime": "06:45 PM",
-          "arrivalTime": "07:58 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "06:39 PM",
+          "arrivalTime": "12:21 AM",
+          "airline": "Frontier Airlines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/frontier_airlines.jpg"
         },
         {
-          "duration": "1h 5m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "12h 42m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-30T07:45:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T06:40:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H5M",
-              "id": "7"
+              "aircraft": "32N",
+              "arrivalTime": "2023-11-15T00:31:00",
+              "arrivalIataCode": "MCO",
+              "carrierCode": "F9",
+              "departureTime": "2023-11-14T21:59:00",
+              "departureIataCode": "BWI",
+              "duration": "PT2H32M",
+              "id": "35"
+            },
+            {
+              "aircraft": "32N",
+              "arrivalTime": "2023-11-15T10:41:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "F9",
+              "departureTime": "2023-11-15T08:00:00",
+              "departureIataCode": "MCO",
+              "duration": "PT2H41M",
+              "id": "36"
             }
           ],
-          "departureTime": "06:40 AM",
-          "arrivalTime": "07:45 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "09:59 PM",
+          "arrivalTime": "10:41 AM",
+          "airline": "Frontier Airlines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/frontier_airlines.jpg"
         }
       ]
     },
     {
       "id": "4",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "252.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 14m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "15h 45m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-29T07:00:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T05:46:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H14M",
-              "id": "4"
+              "aircraft": "32N",
+              "arrivalTime": "2023-10-05T21:31:00",
+              "arrivalIataCode": "DEN",
+              "carrierCode": "F9",
+              "departureTime": "2023-10-05T19:44:00",
+              "departureIataCode": "BUF",
+              "duration": "PT3H47M",
+              "id": "15"
+            },
+            {
+              "aircraft": "32N",
+              "arrivalTime": "2023-10-06T11:29:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "F9",
+              "departureTime": "2023-10-06T06:00:00",
+              "departureIataCode": "DEN",
+              "duration": "PT3H29M",
+              "id": "16"
             }
           ],
-          "departureTime": "05:46 AM",
-          "arrivalTime": "07:00 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "07:44 PM",
+          "arrivalTime": "11:29 AM",
+          "airline": "Frontier Airlines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/frontier_airlines.jpg"
         },
         {
-          "duration": "1h 5m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "12h 42m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-30T07:45:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T06:40:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H5M",
-              "id": "7"
+              "aircraft": "32N",
+              "arrivalTime": "2023-11-15T00:31:00",
+              "arrivalIataCode": "MCO",
+              "carrierCode": "F9",
+              "departureTime": "2023-11-14T21:59:00",
+              "departureIataCode": "BWI",
+              "duration": "PT2H32M",
+              "id": "35"
+            },
+            {
+              "aircraft": "32N",
+              "arrivalTime": "2023-11-15T10:41:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "F9",
+              "departureTime": "2023-11-15T08:00:00",
+              "departureIataCode": "MCO",
+              "duration": "PT2H41M",
+              "id": "36"
             }
           ],
-          "departureTime": "06:40 AM",
-          "arrivalTime": "07:45 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "09:59 PM",
+          "arrivalTime": "10:41 AM",
+          "airline": "Frontier Airlines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/frontier_airlines.jpg"
         }
       ]
     },
     {
       "id": "5",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "252.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 16m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "21h 8m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T16:56:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T15:40:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H16M",
-              "id": "5"
+              "aircraft": "32N",
+              "arrivalTime": "2023-10-05T16:04:00",
+              "arrivalIataCode": "MCO",
+              "carrierCode": "F9",
+              "departureTime": "2023-10-05T13:08:00",
+              "departureIataCode": "BUF",
+              "duration": "PT2H56M",
+              "id": "3"
+            },
+            {
+              "aircraft": "32N",
+              "arrivalTime": "2023-10-06T10:16:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "F9",
+              "departureTime": "2023-10-06T08:00:00",
+              "departureIataCode": "MCO",
+              "duration": "PT2H16M",
+              "id": "4"
             }
           ],
-          "departureTime": "03:40 PM",
-          "arrivalTime": "04:56 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "01:08 PM",
+          "arrivalTime": "10:16 AM",
+          "airline": "Frontier Airlines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/frontier_airlines.jpg"
         },
         {
-          "duration": "1h 5m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "12h 42m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-30T07:45:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T06:40:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H5M",
-              "id": "7"
+              "aircraft": "32N",
+              "arrivalTime": "2023-11-15T00:31:00",
+              "arrivalIataCode": "MCO",
+              "carrierCode": "F9",
+              "departureTime": "2023-11-14T21:59:00",
+              "departureIataCode": "BWI",
+              "duration": "PT2H32M",
+              "id": "35"
+            },
+            {
+              "aircraft": "32N",
+              "arrivalTime": "2023-11-15T10:41:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "F9",
+              "departureTime": "2023-11-15T08:00:00",
+              "departureIataCode": "MCO",
+              "duration": "PT2H41M",
+              "id": "36"
             }
           ],
-          "departureTime": "06:40 AM",
-          "arrivalTime": "07:45 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "09:59 PM",
+          "arrivalTime": "10:41 AM",
+          "airline": "Frontier Airlines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/frontier_airlines.jpg"
         }
       ]
     },
     {
       "id": "6",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "262.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 16m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "9h 10m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T21:46:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T20:30:00",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
+              "id": "5"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T14:15:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T12:36:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H16M",
+              "duration": "PT1H39M",
               "id": "6"
             }
           ],
-          "departureTime": "08:30 PM",
-          "arrivalTime": "09:46 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "02:15 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 5m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "8h 29m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-30T07:45:00",
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T17:06:00",
               "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T06:40:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H5M",
-              "id": "7"
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T15:30:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H36M",
+              "id": "29"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "30"
             }
           ],
-          "departureTime": "06:40 AM",
-          "arrivalTime": "07:45 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "03:30 PM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "7",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "262.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 10m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "14h 4m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T08:55:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T07:45:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H10M",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
               "id": "1"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T19:09:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T17:25:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "2"
             }
           ],
-          "departureTime": "07:45 AM",
-          "arrivalTime": "08:55 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "07:09 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 16m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "8h 29m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T12:28:00",
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T17:06:00",
               "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T11:12:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H16M",
-              "id": "8"
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T15:30:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H36M",
+              "id": "29"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "30"
             }
           ],
-          "departureTime": "11:12 AM",
-          "arrivalTime": "12:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "03:30 PM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "8",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "262.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "9h 10m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T12:28:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T11:15:00",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
+              "id": "5"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T14:15:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T12:36:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "2"
+              "duration": "PT1H39M",
+              "id": "6"
             }
           ],
-          "departureTime": "11:15 AM",
-          "arrivalTime": "12:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "02:15 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 16m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "14h 24m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T12:28:00",
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T11:07:00",
               "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T11:12:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H16M",
-              "id": "8"
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T09:35:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H32M",
+              "id": "27"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "28"
             }
           ],
-          "departureTime": "11:12 AM",
-          "arrivalTime": "12:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "09:35 AM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "9",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "262.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "14h 4m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T19:58:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T18:45:00",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
+              "id": "1"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T19:09:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T17:25:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "3"
+              "duration": "PT1H44M",
+              "id": "2"
             }
           ],
-          "departureTime": "06:45 PM",
-          "arrivalTime": "07:58 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "07:09 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 16m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "14h 24m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T12:28:00",
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T11:07:00",
               "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T11:12:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H16M",
-              "id": "8"
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T09:35:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H32M",
+              "id": "27"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "28"
             }
           ],
-          "departureTime": "11:12 AM",
-          "arrivalTime": "12:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "09:35 AM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "10",
-      "lastTicketingDate": "2022-07-29",
+      "lastTicketingDate": "2023-09-26",
       "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "price": "288.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 14m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "11h 57m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-29T07:00:00",
-              "arrivalIataCode": "JFK",
+              "aircraft": "E90",
+              "arrivalTime": "2023-10-05T07:20:00",
+              "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-29T05:46:00",
+              "departureTime": "2023-10-05T06:00:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H20M",
+              "id": "17"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-10-05T17:57:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "B6",
+              "departureTime": "2023-10-05T16:25:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H14M",
-              "id": "4"
+              "duration": "PT1H32M",
+              "id": "18"
             }
           ],
-          "departureTime": "05:46 AM",
-          "arrivalTime": "07:00 AM",
+          "departureTime": "06:00 AM",
+          "arrivalTime": "05:57 PM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         },
         {
-          "duration": "1h 16m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "11h 5m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
               "aircraft": "E90",
-              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalTime": "2023-11-14T22:10:00",
               "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-30T11:12:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H16M",
-              "id": "8"
+              "departureTime": "2023-11-14T20:45:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H25M",
+              "id": "19"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-11-15T07:50:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "B6",
+              "departureTime": "2023-11-15T06:17:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H33M",
+              "id": "20"
             }
           ],
-          "departureTime": "11:12 AM",
-          "arrivalTime": "12:28 PM",
+          "departureTime": "08:45 PM",
+          "arrivalTime": "07:50 AM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         }
@@ -532,52 +752,74 @@
     },
     {
       "id": "11",
-      "lastTicketingDate": "2022-07-29",
+      "lastTicketingDate": "2023-09-26",
       "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "price": "288.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 16m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "11h 57m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
               "aircraft": "E90",
-              "arrivalTime": "2022-07-29T16:56:00",
-              "arrivalIataCode": "JFK",
+              "arrivalTime": "2023-10-05T07:20:00",
+              "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-29T15:40:00",
+              "departureTime": "2023-10-05T06:00:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H20M",
+              "id": "17"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-10-05T17:57:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "B6",
+              "departureTime": "2023-10-05T16:25:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H16M",
-              "id": "5"
+              "duration": "PT1H32M",
+              "id": "18"
             }
           ],
-          "departureTime": "03:40 PM",
-          "arrivalTime": "04:56 PM",
+          "departureTime": "06:00 AM",
+          "arrivalTime": "05:57 PM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         },
         {
-          "duration": "1h 16m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "12h 10m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
               "aircraft": "E90",
-              "arrivalTime": "2022-07-30T12:28:00",
+              "arrivalTime": "2023-11-14T11:14:00",
               "arrivalIataCode": "BOS",
               "carrierCode": "B6",
-              "departureTime": "2022-07-30T11:12:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H16M",
-              "id": "8"
+              "departureTime": "2023-11-14T09:50:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H24M",
+              "id": "23"
+            },
+            {
+              "aircraft": "E90",
+              "arrivalTime": "2023-11-14T22:00:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "B6",
+              "departureTime": "2023-11-14T20:25:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H35M",
+              "id": "24"
             }
           ],
-          "departureTime": "11:12 AM",
-          "arrivalTime": "12:28 PM",
+          "departureTime": "09:50 AM",
+          "arrivalTime": "10:00 PM",
           "airline": "JetBlue Airways",
           "airlineLogo": ""
         }
@@ -585,478 +827,676 @@
     },
     {
       "id": "12",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "330.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 16m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "5h 20m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T21:46:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T20:30:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H16M",
-              "id": "6"
-            }
-          ],
-          "departureTime": "08:30 PM",
-          "arrivalTime": "09:46 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
-        },
-        {
-          "duration": "1h 16m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
-          "segments": [
+              "aircraft": "320",
+              "arrivalTime": "2023-10-05T07:18:00",
+              "arrivalIataCode": "DTW",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T06:10:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H8M",
+              "id": "7"
+            },
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T12:28:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T11:12:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H16M",
+              "aircraft": "320",
+              "arrivalTime": "2023-10-05T11:30:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T10:00:00",
+              "departureIataCode": "DTW",
+              "duration": "PT1H30M",
               "id": "8"
             }
           ],
-          "departureTime": "11:12 AM",
-          "arrivalTime": "12:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "06:10 AM",
+          "arrivalTime": "11:30 AM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
+        },
+        {
+          "duration": "8h 29m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
+          "segments": [
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T17:06:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T15:30:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H36M",
+              "id": "29"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "30"
+            }
+          ],
+          "departureTime": "03:30 PM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "13",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "330.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 10m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "5h 20m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T08:55:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T07:45:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H10M",
-              "id": "1"
+              "aircraft": "320",
+              "arrivalTime": "2023-10-05T07:18:00",
+              "arrivalIataCode": "DTW",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T06:10:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H8M",
+              "id": "7"
+            },
+            {
+              "aircraft": "320",
+              "arrivalTime": "2023-10-05T11:30:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T10:00:00",
+              "departureIataCode": "DTW",
+              "duration": "PT1H30M",
+              "id": "8"
             }
           ],
-          "departureTime": "07:45 AM",
-          "arrivalTime": "08:55 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "06:10 AM",
+          "arrivalTime": "11:30 AM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 28m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "14h 24m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T16:28:00",
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T11:07:00",
               "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T15:00:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H28M",
-              "id": "9"
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T09:35:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H32M",
+              "id": "27"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "28"
             }
           ],
-          "departureTime": "03:00 PM",
-          "arrivalTime": "04:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "09:35 AM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "14",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "330.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 10m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "5h 38m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T08:55:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T07:45:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H10M",
-              "id": "1"
+              "aircraft": "717",
+              "arrivalTime": "2023-10-05T19:04:00",
+              "arrivalIataCode": "DTW",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T17:55:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H9M",
+              "id": "11"
+            },
+            {
+              "aircraft": "739",
+              "arrivalTime": "2023-10-05T23:33:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T22:03:00",
+              "departureIataCode": "DTW",
+              "duration": "PT1H30M",
+              "id": "12"
             }
           ],
-          "departureTime": "07:45 AM",
-          "arrivalTime": "08:55 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:55 PM",
+          "arrivalTime": "11:33 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 30m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "8h 29m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-31T00:25:00",
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T17:06:00",
               "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T22:55:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H30M",
-              "id": "10"
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T15:30:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H36M",
+              "id": "29"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "30"
             }
           ],
-          "departureTime": "10:55 PM",
-          "arrivalTime": "12:25 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "03:30 PM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "15",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "330.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "5h 38m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T12:28:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T11:15:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "2"
+              "aircraft": "717",
+              "arrivalTime": "2023-10-05T19:04:00",
+              "arrivalIataCode": "DTW",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T17:55:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H9M",
+              "id": "11"
+            },
+            {
+              "aircraft": "739",
+              "arrivalTime": "2023-10-05T23:33:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T22:03:00",
+              "departureIataCode": "DTW",
+              "duration": "PT1H30M",
+              "id": "12"
             }
           ],
-          "departureTime": "11:15 AM",
-          "arrivalTime": "12:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:55 PM",
+          "arrivalTime": "11:33 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 28m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "14h 24m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T16:28:00",
+              "aircraft": "E75",
+              "arrivalTime": "2023-11-14T11:07:00",
               "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T15:00:00",
-              "departureIataCode": "JFK",
-              "duration": "PT1H28M",
-              "id": "9"
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T09:35:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H32M",
+              "id": "27"
+            },
+            {
+              "aircraft": "221",
+              "arrivalTime": "2023-11-14T23:59:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:15:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "28"
             }
           ],
-          "departureTime": "03:00 PM",
-          "arrivalTime": "04:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "09:35 AM",
+          "arrivalTime": "11:59 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "16",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "349.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "9h 10m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T19:58:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T18:45:00",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
+              "id": "5"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T14:15:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T12:36:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "3"
+              "duration": "PT1H39M",
+              "id": "6"
             }
           ],
-          "departureTime": "06:45 PM",
-          "arrivalTime": "07:58 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "02:15 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 28m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "8h 10m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T16:28:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T15:00:00",
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T07:17:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T06:00:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H17M",
+              "id": "21"
+            },
+            {
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T14:10:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T12:45:00",
               "departureIataCode": "JFK",
-              "duration": "PT1H28M",
-              "id": "9"
+              "duration": "PT1H25M",
+              "id": "22"
             }
           ],
-          "departureTime": "03:00 PM",
-          "arrivalTime": "04:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "06:00 AM",
+          "arrivalTime": "02:10 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "17",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "349.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 14m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "9h 10m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-29T07:00:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T05:46:00",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
+              "id": "5"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T14:15:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T12:36:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H14M",
-              "id": "4"
+              "duration": "PT1H39M",
+              "id": "6"
             }
           ],
-          "departureTime": "05:46 AM",
-          "arrivalTime": "07:00 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "02:15 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 28m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "9h 19m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T16:28:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T15:00:00",
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T11:29:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T10:15:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H14M",
+              "id": "25"
+            },
+            {
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T19:34:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T18:00:00",
               "departureIataCode": "JFK",
-              "duration": "PT1H28M",
-              "id": "9"
+              "duration": "PT1H34M",
+              "id": "26"
             }
           ],
-          "departureTime": "03:00 PM",
-          "arrivalTime": "04:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "10:15 AM",
+          "arrivalTime": "07:34 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "18",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "349.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 10m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "14h 4m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T08:55:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T07:45:00",
-              "departureIataCode": "BOS",
-              "duration": "PT1H10M",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
               "id": "1"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T19:09:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T17:25:00",
+              "departureIataCode": "BOS",
+              "duration": "PT1H44M",
+              "id": "2"
             }
           ],
-          "departureTime": "07:45 AM",
-          "arrivalTime": "08:55 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "07:09 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 32m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "8h 10m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-30T18:42:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T17:10:00",
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T07:17:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T06:00:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H17M",
+              "id": "21"
+            },
+            {
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T14:10:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T12:45:00",
               "departureIataCode": "JFK",
-              "duration": "PT1H32M",
-              "id": "11"
+              "duration": "PT1H25M",
+              "id": "22"
             }
           ],
-          "departureTime": "05:10 PM",
-          "arrivalTime": "06:42 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "06:00 AM",
+          "arrivalTime": "02:10 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "19",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "349.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "9h 10m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T12:28:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T11:15:00",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
+              "id": "5"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T14:15:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T12:36:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "2"
+              "duration": "PT1H39M",
+              "id": "6"
             }
           ],
-          "departureTime": "11:15 AM",
-          "arrivalTime": "12:28 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "02:15 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 30m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "13h 34m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-31T00:25:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T22:55:00",
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T07:17:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T06:00:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H17M",
+              "id": "31"
+            },
+            {
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T19:34:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T18:00:00",
               "departureIataCode": "JFK",
-              "duration": "PT1H30M",
-              "id": "10"
+              "duration": "PT1H34M",
+              "id": "32"
             }
           ],
-          "departureTime": "10:55 PM",
-          "arrivalTime": "12:25 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "06:00 AM",
+          "arrivalTime": "07:34 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     },
     {
       "id": "20",
-      "lastTicketingDate": "2022-07-29",
-      "numberOfBookableSeats": 7,
-      "price": "327.00",
+      "lastTicketingDate": "2023-09-26",
+      "numberOfBookableSeats": 3,
+      "price": "349.00",
       "oneWay": false,
       "roundTrip": true,
       "multiCity": false,
       "trips": [
         {
-          "duration": "1h 13m",
-          "originLocationCode": "BOS",
-          "destinatonLocationCode": "JFK",
+          "duration": "9h 10m",
+          "originLocationCode": "BUF",
+          "destinationLocationCode": "BWI",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "E90",
-              "arrivalTime": "2022-07-29T19:58:00",
-              "arrivalIataCode": "JFK",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-29T18:45:00",
+              "aircraft": "221",
+              "arrivalTime": "2023-10-05T06:40:00",
+              "arrivalIataCode": "BOS",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T05:05:00",
+              "departureIataCode": "BUF",
+              "duration": "PT1H35M",
+              "id": "5"
+            },
+            {
+              "aircraft": "E75",
+              "arrivalTime": "2023-10-05T14:15:00",
+              "arrivalIataCode": "BWI",
+              "carrierCode": "DL",
+              "departureTime": "2023-10-05T12:36:00",
               "departureIataCode": "BOS",
-              "duration": "PT1H13M",
-              "id": "3"
+              "duration": "PT1H39M",
+              "id": "6"
             }
           ],
-          "departureTime": "06:45 PM",
-          "arrivalTime": "07:58 PM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "05:05 AM",
+          "arrivalTime": "02:15 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         },
         {
-          "duration": "1h 30m",
-          "originLocationCode": "JFK",
-          "destinatonLocationCode": "BOS",
+          "duration": "13h 41m",
+          "originLocationCode": "BWI",
+          "destinationLocationCode": "BUF",
+          "stops": 1,
           "segments": [
             {
-              "aircraft": "320",
-              "arrivalTime": "2022-07-31T00:25:00",
-              "arrivalIataCode": "BOS",
-              "carrierCode": "B6",
-              "departureTime": "2022-07-30T22:55:00",
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T11:29:00",
+              "arrivalIataCode": "JFK",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T10:15:00",
+              "departureIataCode": "BWI",
+              "duration": "PT1H14M",
+              "id": "33"
+            },
+            {
+              "aircraft": "CR9",
+              "arrivalTime": "2023-11-14T23:56:00",
+              "arrivalIataCode": "BUF",
+              "carrierCode": "DL",
+              "departureTime": "2023-11-14T22:20:00",
               "departureIataCode": "JFK",
-              "duration": "PT1H30M",
-              "id": "10"
+              "duration": "PT1H36M",
+              "id": "34"
             }
           ],
-          "departureTime": "10:55 PM",
-          "arrivalTime": "12:25 AM",
-          "airline": "JetBlue Airways",
-          "airlineLogo": ""
+          "departureTime": "10:15 AM",
+          "arrivalTime": "11:56 PM",
+          "airline": "Delta Air Lines",
+          "airlineLogo": "https://api-ninjas.com/images/airline_logos/delta_air_lines.jpg"
         }
       ]
     }

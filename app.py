@@ -144,8 +144,8 @@ def flights_offer_search(originLocationCode, destinationLocationCode, departureD
                 trips["airlineLogo"] = ""
 
     #GET REQUEST TO-FILE TEST (DELETE)
-    with open("flight_offers.txt", 'w') as f:
-        json.dump(result, f, indent=2)
+    # with open("flight_offers.txt", 'w') as f:
+    #     json.dump(result, f, indent=2)
 
     return result
 

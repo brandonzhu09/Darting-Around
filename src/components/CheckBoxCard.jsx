@@ -8,6 +8,11 @@ import historicSites from "../assets/heritage-sites.jpg";
 import shopping from "../assets/shopping.jpg";
 import dining from "../assets/culinary-travel.jpg";
 import climbing from "../assets/climbing.jpg";
+import views from "../assets/hotel-view.jpg";
+import luxury from "../assets/luxury-hotel.jpeg";
+import boutique from "../assets/boutique-hotel.jpg";
+import pool from "../assets/pools.jpg";
+import gym from "../assets/gym-fitness.jpg";
 
 function CheckBoxCard(props) {
   const [clicked, setClicked] = useState(false);
@@ -23,6 +28,11 @@ function CheckBoxCard(props) {
       "Fashion / Shopping": shopping,
       Dining: dining,
       Climbing: climbing,
+      Views: views,
+      Luxury: luxury,
+      Boutique: boutique,
+      Pool: pool,
+      "Gym & Fitness": gym,
     };
     setImage(images[props.label]);
   }, [props.label]);
@@ -41,7 +51,7 @@ function CheckBoxCard(props) {
       </div>
       <div class="w-60 h-52">
         <img
-          class="object-contain w-full h-full md:object-scale-down"
+          class="object-cover w-full h-full md:object-scale-down"
           src={cardImage}
           alt=""
         />

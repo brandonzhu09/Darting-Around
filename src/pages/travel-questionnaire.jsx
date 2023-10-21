@@ -53,12 +53,27 @@ function TravelQuestionnaire() {
           </div>
         </FormWizard.TabContent>
         <FormWizard.TabContent title="Accommodations" icon="ti-home">
-          <h3>Second Tab</h3>
-          <p>Some content for the second tab</p>
+          <div class="w-5/12 m-auto">
+            <h3 class="text-3xl font-bold mt-4">Pick your accommodations</h3>
+            <p class="mt-2 mb-4">
+              Check all the boxes of accommodations you need for your vacation:
+            </p>
+          </div>
+          <div class="flex flex-wrap">
+            <CheckBoxCard label="Views" />
+            <CheckBoxCard label="Luxury" />
+            <CheckBoxCard label="Boutique" />
+            <CheckBoxCard label="Pool" />
+            <CheckBoxCard label="Gym & Fitness" />
+          </div>
         </FormWizard.TabContent>
         <FormWizard.TabContent title="Last step" icon="ti-check">
-          <h3>Last Tab</h3>
-          <p>Some content for the last tab</p>
+          <div class="w-5/12 m-auto">
+            <h3 class="text-3xl font-bold mt-4">Pick your budget</h3>
+            <p class="mt-2 mb-4">
+              Check one of the options below for the budget of your vacation:
+            </p>
+          </div>
         </FormWizard.TabContent>
       </FormWizard>
 
